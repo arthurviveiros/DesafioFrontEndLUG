@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,60 +8,101 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
-
 <body>
-    <header>
-        <img src="Imagens/logo-ragnarok.png" alt="">
-        <procura>
-            <img src="Imagens/icone-search.png" alt="">
-            <input type="texto" placeholder="Procure uma poção">
+    <headerresp class="headerresp" id="quadradincima">
+        <logo class="headerresp">
+            <img src="Imagens/logo-ragnarok.png" alt="">
+        </logo>
+        <procura class="headerresp">
+            <div>
+                <img src="Imagens/icone-search.png" alt="">
+                <input type="texto" placeholder="Procure uma poção">
+            </div>
         </procura>
-        <frete>
-            <h2>Frete Grátis</h2>
-            <h4>em pedidos acima de R$60</h4>
+    </headerresp>
+    <header class="header">
+        <logo class="header">
+            <img src="Imagens/logo-ragnarok.png" alt="">
+        </logo>
+        <procura class="header">
+            <div>
+                <img src="Imagens/icone-search.png" alt="">
+                <input type="texto" placeholder="Procure uma poção">
+            </div>
+        </procura>
+        <frete class="header">
+            <h2 class="semmargem">Frete Grátis</h2>
+            <h4 class="semmargem">em pedidos acima de R$60</h4>
         </frete>
-        <sacola>
+        <sacola class="header">
             <img src="Imagens/icone-sacola.png" alt="">
-            <h1>SACOLA: 0</h1>
+            <h1>SACOLA: </h1>
+            <h1 id="valor">1</h1>
         </sacola>
     </header>
-    <separadorrosa></separadorrosa>
-    <div>
-        <fileira1>
+    <div class="separadorrosa"></div>
+    <produtos>
+        <h2 class="produtos">Poções</h2>
+        <fileira class="produtos">
             <pocao>
-                <img src="Imagens/pocao-amarela.png" alt="">
-                <p>Poção Amarela - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()" src="Imagens/pocao-amarela.png" alt="">
+                <div>
+                    <p>Poção Amarela - </p>
+                    <p class="valor2">R$ 10,00</p>
+                </div>
             </pocao>
             <pocao>
-                <img src="Imagens/pocao-branca.png" alt="">
-                <p>Poção Branca - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()" src="Imagens/pocao-branca.png" alt="">
+                <div>
+                    <p>Poção Branca - </p>
+                    <p class="valor2">R$ 15,00</p>
+                </div>
             </pocao>
             <pocao>
-                <img src="Imagens/pocao-azul.png" alt="">
-                <p>Poção Azul - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()" src="Imagens/pocao-azul.png" alt="">
+                <div>
+                    <p>Poção Azul - </p>
+                    <p class="valor2">R$ 20,00</p>
+                </div>
             </pocao>
-        </fileira1>
-        <fileira2>
+        </fileira>
+        <fileira class="produtos fileira">
             <pocao>
-                <img src="Imagens/pocao-vermelha.png" alt="">
-                <p>Poção Vermelha - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()" src="Imagens/pocao-vermelha.png" alt="">
+                <div>
+                    <div>
+                        <p>Poção Vermelha - </p>
+                        <p class="valor2">R$ 25,00</p>
+                    </div>
+                </div>
             </pocao>
             <pocao>
-                <img src="Imagens/pocao-laranja.png" alt="">
-                <p>Poção Laranja - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()"" src=" Imagens/pocao-laranja.png" alt="">
+                <div>
+                    <p>Poção Laranja - </p>
+                    <p class="valor2">R$ 30,00</p>
+                </div>
             </pocao>
             <pocao>
-                <img src="Imagens/pocao-verde.png" alt="">
-                <p>Poção Verde - </p>
-                <p>R$ 10,00</p>
+                <img class="item" onclick="colocanocarrinho()" src="Imagens/pocao-verde.png" alt="">
+                <div>
+                    <p>Poção Verde - </p>
+                    <p class="valor2">R$ 35,00</p>
+                </div>
             </pocao>
-        </fileira2>
-    </div>
+        </fileira>
+    </produtos>
+    <div class="separadorrosa2"></div>
+    <footerresp class="footerresp" id="quadradinbaixo">
+        <frete class="footerresp">
+            <h2 class="semmargem">Frete Grátis</h2>
+            <h4 class="semmargem">em pedidos acima de R$60</h4>
+        </frete>
+        <sacola class="footerresp">
+            <img src="Imagens/icone-sacola.png" alt="">
+            <h1>SACOLA: </h1>
+            <h1 class="valor">1</h1>
+    </footerresp>
     <footer>
         <h4>©‎ 201, Gravity Corp. & LeeMyougjin. TODOS OS DIREITOS RESERVADOS.</h4>
     </footer>

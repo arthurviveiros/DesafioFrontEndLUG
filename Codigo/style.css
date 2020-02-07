@@ -1,0 +1,202 @@
+@font-face {
+  font-family: Signika-Light;
+  src: url(Fonte/Signika-Light.otf);
+}
+@font-face {
+  font-family: Signika-Regular;
+  src: url(Fonte/Signika-Regular.otf);
+}
+@font-face {
+  font-family: Signika-Semibold;
+  src: url(Fonte/Signika-Semibold.otf);
+}
+@font-face {
+  font-family: Signika-Bold;
+  src: url(Fonte/Signika-Bold.otf);
+}
+
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  font-family: Signika-Regular;
+}
+header logo img {
+  max-width: 141px;
+  max-height: 87px;
+  width: auto;
+  height: auto;
+}
+header procura div {
+  display: flex;
+  text-indent: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 80px 10px 10px;
+  align-items: center;
+  justify-content: center;
+}
+header procura input {
+  border: 0px;
+  margin-left: 20px;
+}
+header procura input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+header frete {
+  flex-direction: column;
+  text-align: center;
+  color: rgb(250, 124, 67);
+}
+.semmargem {
+  margin: 0;
+}
+header sacola img {
+  margin-right: 10px;
+}
+header sacola h1 {
+  color: rgb(168, 168, 168);
+}
+.valor {
+  color: rgb(208, 25, 86);
+  margin-left: 10px;
+}
+.separadorrosa {
+  flex-direction: column;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(208, 25, 86);
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+produtos h2 {
+  font-family: Signika-Bold;
+  margin: 50px 0 50px 0;
+}
+fileira pocao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+fileira pocao div {
+  display: flex;
+  flex-direction: row;
+  font-family: Signika-Semibold;
+}
+.valor2 {
+  color: rgb(250, 124, 67);
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-family: Signika-Light;
+  color: lightgray;
+}
+.headerresp {
+  display: none;
+}
+.footerresp {
+  display: none;
+}
+.item {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.item:hover {
+  transform: scale(1.2);
+}
+.item:active {
+  transform: scale(1.5);
+}
+
+@media (max-width: 900px) {
+  .header {
+    visibility: hidden;
+  }
+  #quadradincima {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+  }
+  #quadradinbaixo {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 90%;
+  }
+  .headerresp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    font-family: Signika-Regular;
+    flex-direction: row;
+  }
+  .separadorrosa {
+    position: fixed;
+  }
+  .separadorrosa2 {
+    position: fixed;
+    flex-direction: column;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(208, 25, 86);
+    top: 89.3%;
+  }
+  .produtos {
+    flex-direction: column;
+  }
+  headerresp procura div {
+    display: flex;
+    text-indent: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 80px 10px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  headerresp procura input {
+    border: 0px;
+    margin-left: 20px;
+  }
+  headerresp procura input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+  .footerresp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    font-family: Signika-Regular;
+  }
+  footerresp frete {
+    flex-direction: column;
+    text-align: center;
+    color: rgb(250, 124, 67);
+  }
+}
